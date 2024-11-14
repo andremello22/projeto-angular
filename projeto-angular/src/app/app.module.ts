@@ -9,12 +9,12 @@ import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
+    CabecalhoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    CabecalhoComponent,
-    FooterComponent
+    AppRoutingModule
   ],
   providers: [
     provideClientHydration()

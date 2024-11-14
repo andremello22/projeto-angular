@@ -8,7 +8,7 @@ describe('CabecalhoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CabecalhoComponent]
+      declarations: [CabecalhoComponent]
     })
     .compileComponents();
 
