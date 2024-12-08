@@ -5,7 +5,9 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { FooterComponent } from './footer/footer.component';
 import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.component';
-
+import {MatSnackBarModule} from "@angular/material/snack-bar"
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,10 +18,13 @@ import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.componen
   ],
   imports: [
     BrowserModule,        
-    AppRoutingModule
+    AppRoutingModule,
+    MatSnackBarModule,
+    BrowserAnimationsModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
